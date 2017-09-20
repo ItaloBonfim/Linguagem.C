@@ -1,0 +1,39 @@
+N = numero de linhas
+M = numero de colunas
+
+
+for(i=0;i<linhas;i++){
+   for(j=colunas-1;j>=0;j--){
+     for(x=j-1;x>=0;x--){
+        
+         if(SorteioPrincipal[i][j] < SorteioPrincipal[i][x]){
+            temp = SorteioPrincipal[i][j];
+             SorteioPrincipal[i][j] = SorteioPrincipal[i][x];
+              SorteioPrincipal[i][x] = temp;
+              }
+           }
+         }
+      }
+
+
+
+
+
+
+
+
+
+
+
+j=colunas-1;j>=0;j--
+
+
+
+
+        for(i=0;i<linhas;i++){
+        	for(j=0;j<colunas;j++){
+        		MatrizAux[i][j] = SorteioPrincipal[i][j];
+        		printf("%.2d ", MatrizAux[i][j]);
+			}
+			printf("\n");
+		}
